@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.quanyibao.developer</groupId>
-  <artifactId>spring-web-logger</artifactId>
+  <artifactId>spring-mvc-logger</artifactId>
   <version>0.4-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Spring Web logger</name>
-  <description>A small Java library to log http requests/responses when using Spring Web</description>
-  <url>https://github.com/cnepaycd/spring-web-logger</url>
+  <name>Spring MVC logger</name>
+  <description>A small Java library to log http requests/responses when using Spring MVC</description>
+  <url>https://github.com/cnepaycd/spring-mvc-logger</url>
   <inceptionYear>2012</inceptionYear>
 
   <licenses>
@@ -51,7 +51,7 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
+      <artifactId>spring-webmvc</artifactId>
       <version>4.0.0.RELEASE</version>
     </dependency>
   </dependencies>
@@ -104,13 +104,13 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/cnepaycd/spring-web-logger/issues</url>
+    <url>https://github.com/cnepaycd/spring-mvc-logger/issues</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/cnepaycd/spring-web-logger.git</connection>
-    <developerConnection>scm:git:git@github.com:cnepaycd/spring-web-logger.git</developerConnection>
-    <url>https://github.com/cnepaycd/spring-web-logger</url>
+    <connection>scm:git:git://github.com/cnepaycd/spring-mvc-logger.git</connection>
+    <developerConnection>scm:git:git@github.com:cnepaycd/spring-mvc-logger.git</developerConnection>
+    <url>https://github.com/cnepaycd/spring-mvc-logger</url>
     <tag>spring-mvc-logger-0.1</tag>
   </scm>
 
