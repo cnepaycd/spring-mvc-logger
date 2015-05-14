@@ -10,7 +10,7 @@
 
   <name>Spring Web logger</name>
   <description>A small Java library to log http requests/responses when using Spring Web</description>
-  <url>https://github.com/cnepaycd/spring-web-logger/url>
+  <url>https://github.com/cnepaycd/spring-web-logger</url>
   <inceptionYear>2012</inceptionYear>
 
   <licenses>
