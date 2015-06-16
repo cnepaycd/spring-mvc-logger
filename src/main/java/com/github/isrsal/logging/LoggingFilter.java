@@ -51,7 +51,7 @@ public class LoggingFilter extends OncePerRequestFilter {
             prop.load(LoggingFilter.class.getClassLoader().getResourceAsStream(FILE_NAME));
         }catch (Exception e) {
             prop.setProperty("loggingFilter.isUse", "true");
-            prop.setProperty("loggingFilter.keys", "password passwd");
+            prop.setProperty("loggingFilter.keys", "password passwd pwd");
             logger.error(FILE_NAME + " not found, use default value, loggingFilter.isUse="+prop.getProperty("loggingFilter.isUse")+", loggingFilter.keys="+prop.getProperty("loggingFilter.keys"));
         }
     }
@@ -85,9 +85,8 @@ public class LoggingFilter extends OncePerRequestFilter {
         HttpSession session = request.getSession(false);
         if (session != null) {
             msg.append("session id=").append(session.getId()).append("; ");
+            msg.append("session max inactive interval="+session.getMaxInactiveInterval()+"s").append("; ");
         }
-
-        msg.append("session max inactive interval="+session.getMaxInactiveInterval()+"s").append("; ");
 
         if(request.getMethod() != null) {
             msg.append("method=").append(request.getMethod().toString()).append("; ");
